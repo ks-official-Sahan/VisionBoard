@@ -1,70 +1,200 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
-
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+  <a href="https://laravel.com" target="_blank">
+    <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo">
+  </a>
 </p>
 
-## About Laravel
+<p align="center">
+    <img src="https://img.shields.io/badge/PHP-8.1+-777BB4.svg?style=for-the-badge&logo=php&logoColor=white" alt="PHP Badge">
+    <img src="https://img.shields.io/badge/Laravel-10.x-FF2D20.svg?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel Badge">
+    <img src="https://img.shields.io/badge/License-Proprietary-red.svg?style=for-the-badge" alt="License Badge">
+</p>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+# VisionBoard
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+**VisionBoard** is a free, dynamic platform designed for sharing thoughtful posts and ideas. Built on the robust [Laravel](https://laravel.com) framework, it provides a secure and meaningful space for expression.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+---
 
-## Learning Laravel
+## 🛠 Prerequisites
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Before starting, ensure your local machine supports the following:
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+-   **PHP**: Version 8.1 or higher.
+-   **Composer**: Dependency manager for PHP.
+-   **Node.js & NPM**: Required for building frontend assets.
+-   **Database**: MySQL, MariaDB, or SQLite.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### 1. Install PHP (Windows)
 
-## Laravel Sponsors
+We recommend using a local server environment like **[Laragon](https://laragon.org/download/)** or **[XAMPP](https://www.apachefriends.org/download.html)** which bundles PHP, Apache/Nginx, and MySQL.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+_Alternatively, manually install PHP:_
 
-### Premium Partners
+1. Download the **Non Thread Safe** version from [windows.php.net](https://windows.php.net/download).
+2. Extract to `C:\php`.
+3. Add `C:\php` to your System Environment Variables `Path`.
+4. Verify by running `php -v` in your terminal.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+### 2. Install Composer
 
-## Contributing
+1. Download `Composer-Setup.exe` from [getcomposer.org](https://getcomposer.org/download/).
+2. Run the installer and point it to your `php.exe`.
+3. Verify by running `composer -v`.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### 3. Install Node.js
 
-## Code of Conduct
+1. Download the LTS version from [nodejs.org](https://nodejs.org/).
+2. Install and verify by running `node -v` and `npm -v`.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+---
 
-## Security Vulnerabilities
+## 🚀 Local Installation
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Follow these steps to set up a local development copy.
 
-## License
+### 1. Clone the Repository
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+```bash
+git clone https://github.com/ks-official-Sahan/VisionBoard.git
+cd VisionBoard
+```
 
+### 2. Install Dependencies
+
+Install PHP dependencies via Composer:
+
+```bash
+composer install
+```
+
+Install JavaScript dependencies via NPM:
+
+```bash
+npm install
+```
+
+### 3. Configure Environment
+
+Create your `.env` file from the example configuration:
+
+```bash
+cp .env.example .env
+```
+
+Generate a unique application key:
+
+```bash
+php artisan key:generate
+```
+
+### 4. Database Setup
+
+1. Create an empty database for the project (e.g., using phpMyAdmin or HeidiSQL, name it `visionboard`).
+2. Open the `.env` file and update your database credentials:
+
+```ini
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=visionboard
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+3. Run migrations to create database tables:
+
+```bash
+php artisan migrate
+```
+
+### 5. Build Assets & Serve
+
+Compile frontend assets:
+
+```bash
+npm run dev
+```
+
+In a **new terminal tab**, start the local development server:
+
+```bash
+php artisan serve
+```
+
+Access the application at: `http://127.0.0.1:8000`
+
+---
+
+## 🌍 Production Deployment
+
+For deploying VisionBoard to a live server:
+
+### 1. Environment Optimization
+
+Ensure `.env` is set for production:
+
+```ini
+APP_ENV=production
+APP_DEBUG=false
+```
+
+### 2. Install & Cache
+
+Run composer with the optimization flag:
+
+```bash
+composer install --optimize-autoloader --no-dev
+```
+
+Cache configurations and routes for speed:
+
+```bash
+php artisan config:cache
+php artisan route:cache
+php artisan view:cache
+```
+
+### 3. Build Frontend
+
+Build minified assets for production:
+
+```bash
+npm run build
+```
+
+### 4. Storage Permissions
+
+Ensure the server has write access to storage directories:
+
+```bash
+chmod -R 775 storage bootstrap/cache
+```
+
+```bash
+php artisan storage:link
+```
+
+---
+
+## 💻 Further Development
+
+-   **Controllers**: Located in `app/Http/Controllers`.
+-   **Models**: Located in `app/Models`.
+-   **Views**: Blade templates in `resources/views`.
+-   **Routes**: Web routes defined in `routes/web.php`.
+
+To create a new Controller:
+
+```bash
+php artisan make:controller PostController
+```
+
+To create a new Model with Migration:
+
+```bash
+php artisan make:model Post -m
+```
 
 ---
 
@@ -84,18 +214,18 @@ All assets are subject to **Supreme Proprietary License v1.0**, which **does not
 
 ## 👑 Ownership & License
 
-- **© 2025 Subasin Arachchige Sahan Sachintha**
-- **License:** [LICENSE.md](./LICENSE.md)
-- **Protected by:** International IP, Cybersecurity, and Cybercrime laws
-- **Jurisdiction:** Colombo, Sri Lanka
+-   **© 2025 Subasin Arachchige Sahan Sachintha**
+-   **License:** [LICENSE.md](./LICENSE.md)
+-   **Protected by:** International IP, Cybersecurity, and Cybercrime laws
+-   **Jurisdiction:** Colombo, Sri Lanka
 
 ---
 
 ## 🚫 Usage Restrictions
 
-- ❌ Redistribution without explicit permission is forbidden
-- ❌ Unauthorized modification is a violation of the license
-- ❌ Any monetization must include a **minimum 10% royalty or commission**
+-   ❌ Redistribution without explicit permission is forbidden
+-   ❌ Unauthorized modification is a violation of the license
+-   ❌ Any monetization must include a **minimum 10% royalty or commission**
 
 For legal use, licensing, or partnership inquiries, contact:
 
@@ -106,9 +236,9 @@ For legal use, licensing, or partnership inquiries, contact:
 
 ## 💼 Business & Legal Attribution
 
-- **Entity Name:** Evision IT (PVT) Ltd
-- **License Version:** Supreme Proprietary License v1.0
-- **Contact:** [GitHub Profile](https://github.com/ks-official-Sahan)
+-   **Entity Name:** Evision IT (PVT) Ltd
+-   **License Version:** Supreme Proprietary License v1.0
+-   **Contact:** [GitHub Profile](https://github.com/ks-official-Sahan)
 
 ---
 
@@ -118,18 +248,6 @@ Any user or contributor acknowledges:
 
 > “I accept that Subasin Arachchige Sahan Sachintha is the **sole intellectual and legal owner** of this codebase.  
 > I shall not violate, reuse, sell, or clone any portion of this work without permission.”
-
----
-
-## 🧾 Contents
-
-- Code Modules
-- Internal APIs
-- Business Logic
-- UI/UX assets
-- Deployment Scripts
-
-> All of which fall under supreme license protection and usage tracking.
 
 ---
 
